@@ -51,8 +51,8 @@ select{
 .submit{
   width:250px;
   height:50px;
-  background-color:#45ADAE;
-  color:#E23956;
+  background-color:#3466AF;
+  color:#FFCB05;
   text-align:center;
   font-size: 25px;
   font-weight: 400;
@@ -76,6 +76,7 @@ select{
   z-index: 1;
   color:#45ADAE;
   font-size:17px;
+
 }
 
 .age input {
@@ -84,6 +85,7 @@ select{
   width:171px;
   color:#45ADAE;
   font-size:17px;
+
 }
 
 .email input {
@@ -92,6 +94,7 @@ select{
   width:171px;
   color:#45ADAE;
   font-size:15px;
+
 }
 
 
