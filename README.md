@@ -6,7 +6,7 @@
   <p>Hi there, I'm self-taught junior front-end designer. 
   This is my own code, I will change and fix many issues in time. 
   I created this one for certification program on <a href="https://learn.freecodecamp.org">Free Code Camp</a>. 
-  You can see my code on <a href="https://codepen.io/devil1cal/pen/qMVzvx">Code Pen</a> too. 
+  You can see my code on <a href="https://codepen.io/devil1cal/full/qMVzvx">Code Pen</a> too. 
   I'm still learning important componants about the language, espacially CSS. 
   I tried to make responsive and compatible for cross-browsers, but still I need to check, 
   fix and add some componants like;</p>
