@@ -30,69 +30,87 @@ height: auto;
   color:#3466AF;
 
 }
+.boxes{
+  width: 100%;
+}
+
+fieldset{
+  width:100%;
+  padding-bottom:25px;
+  padding-top:25px;
+  padding-left:25px;
+}
+
+select{
+  width:700px;
+}
+.parag{
+  margin:auto;
+}
+
+.submit{
+  width:250px;
+  height:50px;
+  background-color:#45ADAE;
+  color:#E23956;
+  text-align:center;
+  font-size: 25px;
+  font-weight: 400;
+  margin-top:25px;
+  margin-button:25px;
+}
+
+/*---------------------*/
+
+/*---first box---*/
+.spa{
+  display:flex;
+  flex-direction: column;
+}
+
 .name input{
   margin-left:50px;
   height:25px;
+  width:171px;
   opacity: 2;
   z-index: 1;
+  color:#45ADAE;
+  font-size:17px;
 }
+
 .age input {
   margin-left:75px;
   height:25px;
   width:171px;
+  color:#45ADAE;
+  font-size:17px;
 }
+
 .email input {
   margin-left:65px;
   height:25px;
-}
-.info{
-  display:flex;
-  justify-content:space-between;
-
-}
-fieldset{
-  width:800px;
-  padding-bottom:25px;
-  padding-top:25px;
-  padding-left:25px;
-
-}
-legend{
-  margin:auto;
-  text-align:center;
-
-}
-select{
-  width:700px;
+  width:171px;
+  color:#45ADAE;
+  font-size:15px;
 }
 
-.submit{
-  list-style-type:none;
-  width:250px;
-  height:50px;
-  background-color:#3f61a6;
-  color:#bf9004;
-  text-align:center;
-  margin-bottom:50px;
-  border:1px solid #bf9004;
 
-}
 /*--- fonts ---*/
 .main-head{
- text-align:center;
- font-family: Cormorant;
- font-weight:700;
- font-size: 50px;
- color:#3466AF;
- padding-top: 25px;
+  text-align:center;
+  font-family: Cormorant;
+  font-weight:700;
+  font-size: 50px;
+  color:#3466AF;
+  padding-top: 25px;
 
 }
 .description{
- text-align:center;
- font-family: Cormorant;
- font-weight:500;
- color:#3466AF;
- font-size: 45px;
+  text-align:center;
+  font-family: Cormorant;
+  font-weight:500;
+  color:#3466AF;
+  font-size: 45px;
 }
 .page{
   font-size:30px;
@@ -103,13 +121,12 @@ select{
   font-weight:700;
   color:#3466AF;
 }
-
 .end-text{
-padding-top:50px;
-padding-bottom: 25px;
- text-align:center;
- font-family: Cormorant;
- font-weight:700;
- color:#3466AF;
- text-transform: capitalize;
+  padding-top:50px;
+  padding-bottom: 25px;
+  text-align:center;
+  font-family: Cormorant;
+  font-weight:700;
+  color:#3466AF;
+  text-transform: capitalize;
 }

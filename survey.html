@@ -12,16 +12,16 @@
   <main class="main-page">
     <div class="page">
 
-      <div class="info-boxes">
+      <div class="boxes info-boxes">
 
         <h1 id="title" class="main-head">Pokemon Survey</h1>
         <p id="description" class="description">Welcome Our Little Pokemon Survey</p>
       </div>
 
       <form id="survey-form">
-        <div class="info">
-          <fieldset>
-            <legend> Little information about yourself</legend>
+        <div class="boxes info">
+          <fieldset class="spaces spa">
+            <legend class="parag pag1"> Little information about yourself</legend>
             <div class="name">
               <Label for="name-label"> name</label>
               <input type="text" id="name-label" name="name" maxlength="10" placeholder="Enter Your Name">
@@ -40,45 +40,51 @@
           </fieldset>
         </div>
 
-        <fieldset>
-          <Legend> which one created first</legend>
+<div class="boxes">
+        <fieldset class="spaces spa1">
+          <Legend class="parag pag2"> which one created first</legend>
           <input type="checkbox" name="pokemon1" value="pikachu" /> pikachu<br />
           <input type="checkbox" name="pokemon2" value="Bulbasaur" /> Bulbasaur<br />
           <input type="checkbox" name="pokemon3" value="rhydon" /> Rhydon<br />
           <input type="checkbox" name="pokemon4" value="magmar" /> Magmar<br />
         </fieldset>
-
-        <fieldset>
-          <legend>Did Arceus create the Mew?</legend>
-          <select id="chose" name="yes/no">
+      </div>
+<div class="boxes">
+        <fieldset class="spaces spa2">
+          <legend class="parag pag3">Did Arceus create the Mew?</legend>
+          <select id="choose" name="yes/no">
             <option value="none">Yes/No</option>
             <option value="yes">yes</option>
             <option value="no">no</option>
           </select>
         </fieldset>
-
-        <fieldset>
-          <legend>How many 1 generation pokemon exsist?</legend>
+      </div>
+<div class="boxes">
+        <fieldset class="spaces spa4">
+          <legend class="parag pag4">How many 1 generation pokemon exsist?</legend>
           <input type="number" id="number" name="number" />
         </fieldset>
-
-        <fieldset>
-          <legend> who created the pokemon</legend>
+      </div>
+<div class="boxes">
+        <fieldset class="spaces spa5">
+          <legend class="parag pag5"> who created the pokemon</legend>
           <input type="radio" name="creator" value="echiri oda"> Eiichiro Oda <br />
           <input type="radio" name="creator" value="Hideo Kojima"> Hideo Kojima<br />
           <input type="radio" name="creator" value="Ash Ketchum"> Ash Ketchum <br />
           <input type="radio" name="creator" value=" Satoshi Tajiri "> Satoshi Tajiri
         </fieldset>
-
-        <fieldset>
-          <legend> which pokemon is the best?<br /> explain it 125 character</legend>
+</div>
+        <div class="boxes">
+          <fieldset class="spaces spa5">
+          <legend class="parag pag6"> which pokemon is the best?<br /> Explain it 125 character</legend>
           <textarea maxlength="125" rows="4" cols="55" placeholder=" I think Pikachu is the best :3"></textarea>
         </fieldset>
+      </div>
 
       </form>
       <div class="end-text">
         <p> thank you for your contribution</p>
-        <button id="submit"  class="submit" type="submit" onclick="alert('gotta catch em all')">Submit</button>
+        <button id="submit"  class="submit" type="submit" onclick="alert('Gotta Catch Em All')">Submit</button>
       </div>
 
     </div>
