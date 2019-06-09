@@ -3,7 +3,7 @@
   <head>
   </head>
   <body>
-  <p>Hi there, I'm self-taught junior front-end designer. 
+  <p>Hi there, I'm self-taught junior front-end developer. 
   This is my own code, I will change and fix many issues in time. 
   I created this one for certification program on <a href="https://learn.freecodecamp.org">Free Code Camp</a>. 
   You can see my code on <a href="https://codepen.io/devil1cal/full/qMVzvx">Code Pen</a> too. 
