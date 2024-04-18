@@ -1,0 +1,163 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Base Styles */
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center content vertically */
+    width: 100%;
+    min-height: 100vh; /* Ensure full viewport height */
+    margin: 0; /* Remove default body margin */
+    font-family: Arial, sans-serif; /* Default font */
+  }
+  
+  /* Background */
+  .back-piki {
+    background-image: url(https://wallpapertag.com/wallpaper/full/4/9/8/6437-pokemon-wallpaper-2880x1800-for-samsung.jpg);
+    background-position: center;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.2;
+    width: 100%;
+    height: 100%; /* Change to 100% */
+    background-size: cover; /* Ensure the background covers the entire element */
+    background-repeat: no-repeat; /* Prevent background from repeating */
+  }
+  
+  /* Main Design */
+  .main-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    z-index: 1;
+    color: #3466af;
+    max-width: 800px; /* Limit width for better readability */
+    padding: 0 20px; /* Add padding to avoid content sticking to edges */
+  }
+  
+  .boxes {
+    width: 100%;
+  }
+  
+  fieldset {
+    width: 100%;
+    padding: 25px; /* Combine padding properties */
+  }
+  
+  select {
+    width: 100%; /* Adjust width to fill the parent */
+    max-width: 700px; /* Limit maximum width */
+  }
+  
+  .parag {
+    margin: auto;
+  }
+  
+  .submit {
+    width: 100%; /* Adjust width to fill the parent */
+    max-width: 250px; /* Limit maximum width */
+    height: 50px;
+    background-color: #3466af;
+    color: #ffcb05;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 25px;
+    margin-bottom: 25px; /* Correct property name */
+  }
+  
+  /* First Box */
+  .spa {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .name input,
+  .age input,
+  .email input {
+    margin-left: 50px; /* Adjust margin for all inputs */
+    height: 25px;
+    width: calc(100% - 100px); /* Adjust width for all inputs */
+    font-size: 17px;
+  }
+  
+  /* Fonts */
+  .main-head {
+    text-align: center;
+    font-family: Cormorant;
+    font-weight: 700;
+    font-size: 50px;
+    color: #3466af;
+    padding-top: 25px;
+  }
+  
+  .description {
+    text-align: center;
+    font-family: Cormorant;
+    font-weight: 500;
+    color: #3466af;
+    font-size: 45px;
+  }
+  
+  .page {
+    font-size: 30px;
+    font-family: Cormorant;
+    line-height: 50px;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #3466af;
+  }
+  
+  .end-text {
+    padding-top: 50px;
+    padding-bottom: 25px;
+    text-align: center;
+    font-family: Cormorant;
+    font-weight: 700;
+    color: #3466af;
+    text-transform: capitalize;
+  }
+  
+  /* Mobile Styles */
+  @media screen and (max-width: 600px) {
+    .name input,
+    .age input,
+    .email input,
+    select,
+    .submit {
+      width: 100%; /* Make inputs and button full width */
+      margin-left: 0; /* Remove left margin */
+      margin-right: 0; /* Remove right margin */
+    }
+  
+    /* Adjust background size for smaller screens */
+    .back-piki {
+      background-size: contain;
+    }
+  
+    /* Adjust font size for mobile */
+    .main-head {
+      font-size: 40px;
+    }
+  
+    .description {
+      font-size: 35px;
+    }
+  
+    .page {
+      font-size: 25px;
+      line-height: 40px;
+    }
+  
+    .end-text {
+      font-size: 35px;
+    }
+  }
+  
