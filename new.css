@@ -8,27 +8,21 @@
   /* Base Styles */
   body {
     display: flex;
+    width: 100%;
+    width: 100%;
+
     justify-content: center;
     align-items: center; /* Center content vertically */
-    width: 100%;
-    min-height: 100vh; /* Ensure full viewport height */
     margin: 0; /* Remove default body margin */
-    font-family: Arial, sans-serif; /* Default font */
-  }
-  
-  /* Background */
-  .back-piki {
+    font-family: Arial, sans-serif; 
+    font-size: 15px;
     background-image: url(https://wallpapertag.com/wallpaper/full/4/9/8/6437-pokemon-wallpaper-2880x1800-for-samsung.jpg);
     background-position: center;
-    position: absolute;
-    z-index: -1;
-    opacity: 0.2;
-    width: 100%;
-    height: 100%; /* Change to 100% */
-    background-size: cover; /* Ensure the background covers the entire element */
-    background-repeat: no-repeat; /* Prevent background from repeating */
+
+
   }
   
+
   /* Main Design */
   .main-page {
     display: flex;
@@ -37,7 +31,7 @@
     margin-top: 50px;
     z-index: 1;
     color: #3466af;
-    max-width: 800px; /* Limit width for better readability */
+    max-width: 600px; /* Limit width for better readability */
     padding: 0 20px; /* Add padding to avoid content sticking to edges */
   }
   
@@ -126,7 +120,7 @@
   }
   
   /* Mobile Styles */
-  @media screen and (max-width: 600px) {
+  @media screen and (min-width: 600px) {
     .name input,
     .age input,
     .email input,
