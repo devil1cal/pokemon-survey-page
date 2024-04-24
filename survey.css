@@ -1,140 +1,124 @@
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+/* Reset CSS */
+/* Apply a basic reset to remove default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-display: flex;
-justify-content: center;
-width: 100%;
-height: auto;
-background-color: #fdecb7;
+/* Base Styles */
+/* Set up basic styles for the body */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Cormorant;
+  position:relative;
 }
 
-/*--- background ---*/
-.back-piki{
-  background-image: url(https://wallpapertag.com/wallpaper/full/4/9/8/6437-pokemon-wallpaper-2880x1800-for-samsung.jpg);
-  background-position: center;
-  position:absolute;
-  z-index: -1;
-  opacity: 0.2;
+/* Page Background */
+.page-background{
   width: 100%;
   height: 100%;
-
-
+  min-height:fit-content;
+  position: absolute;
+  background-image: url(https://wallpapertag.com/wallpaper/full/4/9/8/6437-pokemon-wallpaper-2880x1800-for-samsung.jpg);
+  background-position: center;
+  background-size:auto;
+  opacity: 0.25;
+  z-index: 0;
+  border:1px solid red;
 }
-/*--- main design ---*/
-.main-page{
-  display:flex;
-  flex-direction: column;
-  width:100%;
-  align-items:center;
-  margin-top:50px;
-  z-index: 1;
-  color:#3466AF;
 
-}
-.boxes{
+/* Main Design */
+/* Define styles for the main container */
+.mainbg {
+  display: flex;
   width: 100%;
-}
-
-fieldset{
-  width:100%;
-  padding-bottom:25px;
-  padding-top:25px;
-  padding-left:25px;
-}
-
-select{
-  width:700px;
-}
-.parag{
-  margin:auto;
-}
-
-.submit{
-  width:250px;
-  height:50px;
-  background-color:#3466AF;
-  color:#FFCB05;
-  text-align:center;
-  font-size: 25px;
-  font-weight: 400;
-  margin-top:25px;
-  margin-bottom:25px;
-}
-
-/*---------------------*/
-
-/*---first box---*/
-.spa{
-  display:flex;
+  height: 100%;
+  min-width: 320px;
+  min-height: 100%;
   flex-direction: column;
-}
-
-.name input{
-  margin-left:50px;
-  height:25px;
-  width:171px;
-  opacity: 2;
   z-index: 1;
-
-  font-size:17px;
-
 }
 
-.age input {
-  margin-left:75px;
-  height:25px;
-  width:171px;
-
-  font-size:17px;
-
+/* Main Heading */
+.main-head {
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px; 
 }
 
-.email input {
-  margin-left:65px;
-  height:25px;
-  width:171px;
-
-  font-size:15px;
-
-}
-
-
-/*--- fonts ---*/
-.main-head{
-  text-align:center;
-  font-family: Cormorant;
-  font-weight:700;
-  font-size: 50px;
-  color:#3466AF;
-  padding-top: 25px;
-
-}
-.description{
-  text-align:center;
-  font-family: Cormorant;
-  font-weight:500;
-  color:#3466AF;
-  font-size: 45px;
-}
+/* Page Content */
 .page{
-  font-size:30px;
-  font-family:Cormorant;
-  line-height:50px;
-  letter-spacing:3px;
-  text-transform:capitalize;
-  font-weight:700;
-  color:#3466AF;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+
+   /* Typography */
+  font-size: 25px; 
+  line-height: 40px;
+  letter-spacing: 2px; 
+  text-transform: capitalize;
+  font-weight: 700;
 }
-.end-text{
-  padding-top:50px;
-  padding-bottom: 25px;
-  text-align:center;
+
+/* Form Boxes */
+.boxes {
+  display: flez;
+  width: 100%;
+  height: 100%;
+  min-width: 320px;
+  padding:5%;
+  margin:0;
+
+}
+
+/* Input Fields and Select */
+.name input,
+.age input,
+.email input,
+select {
+  width: calc(100% - 50px); 
+  height: 30px; 
+  font-size: 16px; 
+
+  /* Typography */
   font-family: Cormorant;
-  font-weight:700;
-  color:#3466AF;
+}
+
+/* Submit Button */
+.submit {
+  width: 50%;
+  height: 50px; /* Increased height for better touch target on small screens */
+  background-color: #3466af;
+  color: #ffcb05;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+/* End Text */
+.end-text {
+  padding-top: 7%; 
+  padding-bottom: 5%; 
+  text-align: center;
+  font-weight: 700;
   text-transform: capitalize;
 }
+
+/* Description */
+.description {
+  text-align: center;
+  font-weight: 500;
+  font-size: 35px; 
+}
+
