@@ -6,18 +6,14 @@
   <link href="https://fonts.googleapis.com/css?family=Cormorant" rel="stylesheet">
   <link href="new.css" rel="stylesheet">
 </head>
-
 <body>
-  <div class="back-piki"></div>
-  <main class="main-page">
+  <div class="page-background"></div>
+  <div class="mainbg">
     <div class="page">
-
       <div class="boxes info-boxes">
-
         <h1 id="title" class="main-head">Pokemon Survey</h1>
         <p id="description" class="description">Welcome to Our Little Pokemon Survey</p>
       </div>
-
       <form id="survey-form">
         <div class="boxes info">
           <fieldset class="spaces spa">
@@ -26,21 +22,17 @@
               <Label for="name-label"> name</label>
               <input type="text" id="name-label" name="name" maxlength="10" placeholder="Enter Your Name">
             </div>
-
             <div class="age">
               <label for="age">Age</label>
               <input type="date" id="age" name="age" />
             </div>
-
             <div class="email">
               <label for="email-label">mail</label>
               <input type="email" id="email-label" name="mail" placeholder="Enter Your E-mail Adres" />
             </div>
-
           </fieldset>
         </div>
-
-<div class="boxes">
+      <div class="boxes">
         <fieldset class="spaces spa1">
           <Legend class="parag pag2"> which one was created first</legend>
           <input type="checkbox" name="pokemon1" value="pikachu" /> pikachu<br />
@@ -49,7 +41,7 @@
           <input type="checkbox" name="pokemon4" value="magmar" /> Magmar<br />
         </fieldset>
       </div>
-<div class="boxes">
+      <div class="boxes">
         <fieldset class="spaces spa2">
           <legend class="parag pag3">Did Arceus create the Mew?</legend>
           <select id="choose" name="yes/no">
@@ -59,13 +51,13 @@
           </select>
         </fieldset>
       </div>
-<div class="boxes">
+      <div class="boxes">
         <fieldset class="spaces spa4">
           <legend class="parag pag4">How many generation 1 pokemon are there?</legend>
           <input type="number" id="number" name="number" />
         </fieldset>
       </div>
-<div class="boxes">
+      <div class="boxes">
         <fieldset class="spaces spa5">
           <legend class="parag pag5"> who is the creator of the pokemon</legend>
           <input type="radio" name="creator" value="echiri oda"> Eiichiro Oda <br />
@@ -73,7 +65,7 @@
           <input type="radio" name="creator" value="Ash Ketchum"> Ash Ketchum <br />
           <input type="radio" name="creator" value=" Satoshi Tajiri "> Satoshi Tajiri
         </fieldset>
-</div>
+      </div>
         <div class="boxes">
           <fieldset class="spaces spa5">
           <legend class="parag pag6"> which pokemon is the best?<br /> Explain it in 125 characters</legend>
@@ -86,12 +78,8 @@
         <p> thank you for your contribution</p>
         <button id="submit"  class="submit" type="submit" onclick="alert('Gotta Catch Em All')">Submit</button>
       </div>
-
     </div>
-
-
-  </main>
-
+  </div>
 </body>
 
 </html>

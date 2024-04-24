@@ -1,157 +1,144 @@
 /* Reset CSS */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Base Styles */
-  body {
-    display: flex;
-    width: 100%;
-    width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    justify-content: center;
-    align-items: center; /* Center content vertically */
-    margin: 0; /* Remove default body margin */
-    font-family: Arial, sans-serif; 
-    font-size: 15px;
-    background-image: url(https://wallpapertag.com/wallpaper/full/4/9/8/6437-pokemon-wallpaper-2880x1800-for-samsung.jpg);
-    background-position: center;
+/* Base Styles */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Cormorant;
+  position:relative;
+
+}
+.page-background{
+  width: 100%;
+  height: 100%;
+  min-height:fit-content;
+  position: absolute;
+  background-image: url(https://wallpapertag.com/wallpaper/full/4/9/8/6437-pokemon-wallpaper-2880x1800-for-samsung.jpg);
+  background-position: center;
+  background-size:auto;
+  opacity: 0.25;
+  z-index: 0;
+  border:1px solid red;
+}
+
+/* Main Design */
+.mainbg {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  min-width: 320px;
+  min-height: 100%;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.main-head {
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px; 
+
+}
+
+.page{
+  width: 100%;
+  height: 100%;
+  min-width: 320px;
+  min-height: 100%;
+  margin: 5%;
+
+  /*typografy*/
+  font-size: 25px; 
+  line-height: 40px;
+  letter-spacing: 2px; 
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.boxes {
+  display: flez;
+  width: 100%;
+  height: 100%;
+  min-width: 320px;
+  padding:2.5%;
+  border:1px solid red;
+}
 
 
-  }
-  
 
-  /* Main Design */
-  .main-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
-    z-index: 1;
-    color: #3466af;
-    max-width: 600px; /* Limit width for better readability */
-    padding: 0 20px; /* Add padding to avoid content sticking to edges */
-  }
-  
-  .boxes {
-    width: 100%;
-  }
-  
-  fieldset {
-    width: 100%;
-    padding: 25px; /* Combine padding properties */
-  }
-  
-  select {
-    width: 100%; /* Adjust width to fill the parent */
-    max-width: 700px; /* Limit maximum width */
-  }
-  
-  .parag {
-    margin: auto;
-  }
-  
-  .submit {
-    width: 100%; /* Adjust width to fill the parent */
-    max-width: 250px; /* Limit maximum width */
-    height: 50px;
-    background-color: #3466af;
-    color: #ffcb05;
-    text-align: center;
-    font-size: 25px;
-    font-weight: 400;
-    margin-top: 25px;
-    margin-bottom: 25px; /* Correct property name */
-  }
-  
-  /* First Box */
-  .spa {
-    display: flex;
-    flex-direction: column;
-  }
-  
+
+.name input,
+.age input,
+.email input {
+  width: calc(100% - 50px); 
+  height: 30px; 
+  font-size: 16px; 
+
+  /*typografy*/
+  font-family: Cormorant;
+}
+
+.submit {
+  width: 50%;
+  height: 50px; /* Increased height for better touch target on small screens */
+  background-color: #3466af;
+  color: #ffcb05;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.end-text {
+  padding-top: 7%; 
+  padding-bottom: 5%; 
+  text-align: center;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.description {
+  text-align: center;
+  font-weight: 500;
+  font-size: 35px; 
+}
+
+
+/*
+
+@media screen and (min-width: 600px) {
   .name input,
   .age input,
-  .email input {
-    margin-left: 50px; /* Adjust margin for all inputs */
-    height: 25px;
-    width: calc(100% - 100px); /* Adjust width for all inputs */
-    font-size: 17px;
+  .email input,
+  select,
+  .submit {
+      width: calc(100% - 20px);
+      margin-left: 0;
+      margin-right: 0;
   }
-  
-  /* Fonts */
+
+
   .main-head {
-    text-align: center;
-    font-family: Cormorant;
-    font-weight: 700;
-    font-size: 50px;
-    color: #3466af;
-    padding-top: 25px;
-  }
-  
-  .description {
-    text-align: center;
-    font-family: Cormorant;
-    font-weight: 500;
-    color: #3466af;
-    font-size: 45px;
-  }
-  
-  .page {
-    font-size: 30px;
-    font-family: Cormorant;
-    line-height: 50px;
-    letter-spacing: 3px;
-    text-transform: capitalize;
-    font-weight: 700;
-    color: #3466af;
-  }
-  
-  .end-text {
-    padding-top: 50px;
-    padding-bottom: 25px;
-    text-align: center;
-    font-family: Cormorant;
-    font-weight: 700;
-    color: #3466af;
-    text-transform: capitalize;
-  }
-  
-  /* Mobile Styles */
-  @media screen and (min-width: 600px) {
-    .name input,
-    .age input,
-    .email input,
-    select,
-    .submit {
-      width: 100%; /* Make inputs and button full width */
-      margin-left: 0; /* Remove left margin */
-      margin-right: 0; /* Remove right margin */
-    }
-  
-    /* Adjust background size for smaller screens */
-    .back-piki {
-      background-size: contain;
-    }
-  
-    /* Adjust font size for mobile */
-    .main-head {
       font-size: 40px;
-    }
-  
-    .description {
+  }
+
+  .description {
       font-size: 35px;
-    }
-  
-    .page {
+  }
+
+  .page {
       font-size: 25px;
       line-height: 40px;
-    }
-  
-    .end-text {
-      font-size: 35px;
-    }
   }
-  
+
+  .end-text {
+      font-size: 35px;
+  }
+}
+*/
